@@ -1,0 +1,403 @@
+:root{
+    --cor-primaria:#004288;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+
+    background: linear-gradient(120deg, #000814, #001d3d, #000000);
+    /* para nao repetir o background*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    font-family: "Cuprum", sans-serif;
+    /* este o tamanho minio que decido para ficar em bom enquadramento ou seja quando chegas neste tamanho de pix ele nao diminuira mais*/
+    min-width: 1247px;
+}
+
+header {
+    display: flex;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    align-items: center;
+}
+
+.logo img {
+    width: 250px;
+    height: 60px;
+    display: flex;
+    margin-top: 15px;
+}
+
+.icones {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    padding: 10px;
+    gap: 50px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.icones a {
+    color: white;
+}
+
+.conteudo {
+    text-align: center;
+    font-size: 23px;
+    color: white;
+}
+
+.corpo {
+    text-align: center;
+    color: white;
+    border-bottom: 5px solid rgb(255, 255, 255);
+    ;
+    padding: 40px;
+}
+
+.corpo p {
+    font-size: 20px;
+    padding: 30px;
+}
+
+.corpo iframe {
+    width: 600px;
+    box-shadow: 0 30px 60px var(--cor-primaria);
+}
+
+.agenda {
+    display: flex;
+    border-bottom: 5px solid rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+
+}
+
+.imagem-agenda img {
+    width: 700px;
+    height: 900px;
+    margin-left: -250px;
+    margin-bottom: -3px;
+
+}
+
+
+.locais {
+    color: white;
+    display: block;
+    font-style: italic;
+
+}
+
+.agenda-show {
+    text-align: center;
+    font-size: 30px;
+    justify-content: center;
+}
+
+.datas {
+    text-align: start;
+    margin: 100px;
+    font-size: 10px;
+}
+
+.youtube {
+    color: white;
+}
+
+.videos-yt {
+    display: flex;
+}
+
+.youtube iframe {
+    display: block;
+    margin: auto;
+    box-shadow: 0 30px 60px var(--cor-primaria);
+
+}
+
+.youtube h1 {
+    padding: 30px;
+}
+
+.youtube h3 {
+    text-align: center;
+    padding: 20px;
+}
+
+.btn-editar {
+    background: linear-gradient(135deg, #ffa726 0%, #fb8c00);
+    color: white;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.9em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin-right: 10px;
+}
+
+.btn-editar:hover {
+    transform: translateX(-2px);
+    box-shadow: 0 5px 15px #ffa72666;
+}
+
+.btn-editar:active {
+    transform: translateX(0);
+}
+
+.botoes {
+    text-align: center;
+    padding: 30px;
+    display: flex;
+    font-size: 20px;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.spotify {
+    color: white;
+    padding: 50px;
+    text-align: center;
+    display: flex;
+}
+
+.spotify h1 {
+    padding: 20px;
+}
+
+.cardspotify {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.cardspotify img {
+    width: 250px;
+    height: auto;
+    box-shadow: 0 5px 30px var(--cor-primaria);
+
+}
+
+.textospotify {
+    text-align: justify;
+    padding: 20px;
+    font-style: italic;
+}
+
+.tagp {
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+
+}
+
+.h1spoti {
+    color: white;
+    padding: 20px;
+}
+
+.iframespotify {
+    padding: 10px;
+}
+
+.minhasMusicas {
+    padding: 50px;
+}
+
+.minhasMusicas iframe {
+    box-shadow: 0 5px 30px var(--cor-primaria);
+    border: none;
+}
+
+.titulomusica {
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.titulomusica h1 {
+    padding: 10px;
+}
+
+.titulomusica h2 {
+    padding: 10px;
+}
+
+footer {
+    position: relative; /* Necessário para posicionar os ícones dentro */
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+}
+
+footer svg {
+    display: block;
+    margin-bottom: 0;
+}
+
+.icones-footer {
+    position: absolute;
+    top: 70%; /* Ajuste a altura dos ícones sobre a onda */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 25px;
+    z-index: 10; /* Mantém na frente do SVG */
+}
+
+.icones-footer img {
+    width: 35px;
+    height: auto;
+    filter: drop-shadow(0px 5px 10px #000000);
+}
+
+.conteudo-footer {
+  position: absolute;
+    bottom: 5%; /* Ajuste a altura dos ícones sobre a onda */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 25px;
+    z-index: 10; /* Mantém na frente do SVG */
+}
+.cifra{
+   display: flex;
+    justify-content: space-between; /* joga cada lado pro seu canto */
+     border-bottom: 5px solid rgb(255, 255, 255);
+}
+
+.btn-cifras{
+    display:flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    width: 50%;
+
+}
+.btn-cifras h1{
+    margin-bottom: 60px;
+    color: white;
+}
+
+.btn-1{
+width: 100%;
+height: 50px;
+border-radius: 10px;
+border: none;
+ transition: transform 0.2s, box-shadow 0.2s;
+ font-size: 20px;
+ background-color:var(--cor-primaria);
+ color: white;
+ font-family: "Cuprum", sans-serif;
+ font-style: italic;
+ font-weight: 600;
+}
+
+.btn-1:hover{
+ transform: translateY(-2px);
+ box-shadow: 0 30px 60px var(--cor-primaria);
+}
+
+.btn-1:active{
+ transform: translateY(0);
+}
+
+.cifras{
+width: 50%;
+border-left:  5px solid rgb(255, 255, 255);
+}
+.cifras img{
+    width: 500px;
+    height: 500px;    margin: auto;
+}
+
+.teste-btn{
+    display: flex;
+    flex-direction: column; 
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.teste-btn label{
+    color: white;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 600;
+
+}
+
+.btn-teste{
+    width: 30%;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    box-shadow:0 30px 60px var(--cor-primaria);
+}
+.testeteste{
+    display:flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 30%;
+}
+.testeteste input{
+    background-color: var(--cor-primaria);
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    border: 2px solid white;
+}
+#nome{
+    color: white;
+    text-align: center;
+}
+
+#nome::placeholder{
+    color: white;
+    text-align: center;
+}
+
+
+.autografo{
+    display: flex;
+    justify-content: center;
+}
+.autografo img{
+    width: 3000px;
+}
+
+.contato{
+    display: flex;
+    color: white;
+    font-size: 30px;
+    gap: 30px;
+    text-align: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.contato p{
+    border: 2px solid var(--cor-primaria);
+    background-color: var(--cor-primaria);
+    border-radius: 8px;
+    padding: 8px;
+     box-shadow:0 30px 60px black;
+}
